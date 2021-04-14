@@ -16,6 +16,6 @@ alias \
   shrc="vi /home/void/.kshrc" \
   reboot="doas reboot" \
   halt="doas halt -p" \
-  sensors="doas sysctl hw.sensors" \
+  sensors="sysctl hw.sensors | grep temp" \
   lsblk="sysctl hw.disknames" \
   mybsd="ufetch; df -h"
